@@ -9,6 +9,16 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-7580334-2');
+
+    function toggleblock(blockId)
+    {
+      var block = document.getElementById(blockId);
+      if (block.style.display == 'none') {
+        block.style.display = 'block' ;
+        } else {
+        block.style.display = 'none' ;
+        }
+    }
   </script>
 
   <title>Kartik Ramachandruni</title>
@@ -60,6 +70,23 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+		        <tr>
+		        <td style="padding:20px;width:75%;vertical-align:middle">
+		        	<papertitle>Attentive Task-Net: Self Supervised Task-Attention Network for Imitation Learning using Video Demonstration</papertitle>
+		        <br>
+			        <strong>Kartik Ramachandruni</strong>,
+			        <a href="https://madhubabuv.github.io/">Madhu Vankadari</a>,
+			        <a href="https://scholar.google.co.in/citations?user=yIkPDR0AAAAJ&hl=en">Anima Majumder</a>,
+			        <a href="https://scholar.google.co.in/citations?user=-_ELGZcAAAAJ&hl=en">Samrat Dutta</a>,
+			        <a href="https://scholar.google.co.in/citations?user=gXORbx0AAAAJ&hl=en">Swagat Kumar</a>
+			        <br>
+			        <a href="https://www.icra2020.org/"> <em>ICRA'20</em> (Accepted)</a> | <a href="javascript:toggleblock('icra_20abs')">Abstract</a>
+			        <br>
+		         	<p align="justify"> <i id='icra_20abs' style="display: none;">
+		            This paper proposes an end-to-end self-supervised feature representation network named Attentive Task-Net or AT-Net for video-based task imitation. The proposed AT-Net incorporates a novel multi-level spatial attention module to identify the intended task demonstrated by the expert. The neural connections in AT-Net ensure the relevant information in the demonstration is amplified and the irrelevant information is suppressed while learning task-specific feature embeddings. This is achieved by a weighted combination of multiple inter mediate feature maps of the input image at different stages of the CNN pipeline. The weights of the combination are given by the compatibility scores, predicted by the attention module for respective feature maps. The AT-Net is trained using a metric learning loss which aims to decrease the distance between the feature representations of concurrent frames from multiple view points and increase the distance between temporally consecutive frames. The AT-Net features are then used to formulate a reinforcement learning problem for task imitation. Through experiments on the publicly available Multi-view pouring dataset, it is demonstrated that the output of the attention module highlights the task-specific objects while suppressing the rest of the background. The efficacy of the proposed method is further validated by qualitative and quantitative comparison with a state-of-the-art technique along with intensive ablation studies. The proposed method is implemented to imitate a pouring task where an RL agent is learned with the AT-Net in Gazebo simulator. Our findings show that the AT-Net achieves 6.5% decrease in alignment error along with a reduction in the number of training iterations by almost 155k over the state-of-the-art while satisfactorily imitating the intended task.</i></p>
+		        </td></tr>	
+
             <tr>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="data/RO-MAN_camera_ready.pdf">
@@ -93,6 +120,7 @@
               <br>
               <p></p>
           </td></tr>
+
           <tr><td><center>Design and source code from <a href="https://jonbarron.info/">Jon Barron's </a> website</center></tr></td>
         </tbody></table>
     </tbody></table>
