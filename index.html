@@ -40,22 +40,19 @@
               <p style="text-align:center">
                 <name>Kartik Ramachandruni</name>
               </p>
-              <p>I am a 1st Year PhD student in Robotics <a href="https://ic.gatech.edu/">(Interactive Computing department)</a> at the Georgia Institute of Technology</a>. I am currently being advised by <a href="https://www.cc.gatech.edu/~chernova/">Prof. Sonia Chernova</a> as part of the <a href="http://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL) lab</a>.
+              <p>I am a 2nd Year PhD student in Robotics <a href="https://ic.gatech.edu/">(Interactive Computing department)</a> at the Georgia Institute of Technology</a>. I am advised by <a href="https://www.cc.gatech.edu/~chernova/">Prof. Sonia Chernova</a> as part of the <a href="http://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL) lab</a>.
               </p>
               <p>
-                I graduated from the <a href="http://www.iitj.ac.in/">Indian Institute of Technology Jodhpur</a> with a B.Tech. in Mechanical Engineering. I have been working in the field of robotics for almost 3 years by participating in a variety of academic and industrial projects.
-              </p>
+                I graduated from the <a href="http://www.iitj.ac.in/">Indian Institute of Technology Jodhpur</a> with a B.Tech. in Mechanical Engineering, after which I worked as a robotics researcher for two years at the Tata Research and Innovation labs in Bangalore, India. 
+              </Tatap>
               <p style="text-align:center">
                 <a href="mailto:kartik.rv96@gmail.com">Email</a> &nbsp/&nbsp
                 <a href="data/Kartik_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=c6OhZroAAAAJ&hl=en&oi=ao">Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/kartik-ramachandruni"> LinkedIn </a>
               </p>
-              <!-- <p>
-                  <b>I am keenly interested to pursue a Ph.D. degree in order to support my research endeavours and achieve my long-term goals.
-            </td> -->
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/kartik_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/kartik_circle.png" class="hoverZoomLink"></a>
+              <a href="images/website.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/website.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -64,7 +61,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I am eager to work on improving the autonomy of robots in learning to perform real-world tasks, particularly by using human feedback signals coupled with sensory data from the environment to imitate complex behaviors and learn new skills. Using deep learning concepts coupled with reinforcment learning training strategies, I would like to investigate further into the above areas of research and come up with novel solutions that can help robots perform better in real-world environments.
+                My long-term research interest is enabling robot agents to execute real-world tasks with minimal human instruction in novel, unstructured environments. Towards this direction, I am currently working on a semantic reasoning framework that determines a tidy configuration of objects for a tabletop rearrangement task. In addition to extending my current work, I am highly interested in working on developing semantic reasoning frameworks for other long-horizon robot task planning applications. I have also worked in research projects on human-robot collaborative task planning and vision-based imitation learning. 
+                
+                I am actively looking for internship opportunities in Summer 2023!
               </p>
             </td>
           </tr>
@@ -73,21 +72,23 @@
 
 		        <tr>
 		        <td style="padding:20px;width:75%;vertical-align:middle">
-		        	<papertitle>Attentive Task-Net: Self Supervised Task-Attention Network for Imitation Learning using Video Demonstration</papertitle>
-		        <br>
+              <a href="data/ICRA_AT-Net.pdf">
+		        	  <papertitle>Attentive Task-Net: Self Supervised Task-Attention Network for Imitation Learning using Video Demonstration</papertitle>
+              </a>
+              <br>
 			        <strong>Kartik Ramachandruni</strong>,
 			        <a href="https://madhubabuv.github.io/">Madhu Vankadari</a>,
 			        <a href="https://scholar.google.co.in/citations?user=yIkPDR0AAAAJ&hl=en">Anima Majumder</a>,
 			        <a href="https://scholar.google.co.in/citations?user=-_ELGZcAAAAJ&hl=en">Samrat Dutta</a>,
 			        <a href="https://scholar.google.co.in/citations?user=gXORbx0AAAAJ&hl=en">Swagat Kumar</a>
 			        <br>
-			        <a href="https://www.icra2020.org/"> <em>ICRA'20</em> (Accepted)</a> | <a href="javascript:toggleblock('icra_20abs')">Abstract</a>
+			        <a href="https://www.icra2020.org/"> <em>ICRA'20</em></a> | <a href="javascript:toggleblock('icra_20abs')">Abstract</a>
 			        <br>
 		         	<p align="justify"> <i id='icra_20abs' style="display: none;">
 		            This paper proposes an end-to-end self-supervised feature representation network named Attentive Task-Net or AT-Net for video-based task imitation. The proposed AT-Net incorporates a novel multi-level spatial attention module to identify the intended task demonstrated by the expert. The neural connections in AT-Net ensure the relevant information in the demonstration is amplified and the irrelevant information is suppressed while learning task-specific feature embeddings. This is achieved by a weighted combination of multiple inter mediate feature maps of the input image at different stages of the CNN pipeline. The weights of the combination are given by the compatibility scores, predicted by the attention module for respective feature maps. The AT-Net is trained using a metric learning loss which aims to decrease the distance between the feature representations of concurrent frames from multiple view points and increase the distance between temporally consecutive frames. The AT-Net features are then used to formulate a reinforcement learning problem for task imitation. Through experiments on the publicly available Multi-view pouring dataset, it is demonstrated that the output of the attention module highlights the task-specific objects while suppressing the rest of the background. The efficacy of the proposed method is further validated by qualitative and quantitative comparison with a state-of-the-art technique along with intensive ablation studies. The proposed method is implemented to imitate a pouring task where an RL agent is learned with the AT-Net in Gazebo simulator. Our findings show that the AT-Net achieves 6.5% decrease in alignment error along with a reduction in the number of training iterations by almost 155k over the state-of-the-art while satisfactorily imitating the intended task.</i></p>
 		        </td></tr>	
 
-            <tr>
+            <!-- <tr>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="data/RO-MAN_camera_ready.pdf">
                 <papertitle>SMAK-Net: Self-Supervised Multi-level Spatial Attention Network for Knowledge Representation towards Imitation Learning</papertitle>
@@ -103,7 +104,7 @@
               </a>
               <br>
               <p></p>
-          </td></tr>
+          </td></tr> -->
 
             <tr>
             <td style="padding:20px;width:75%;vertical-align:middle">
