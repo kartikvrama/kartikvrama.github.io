@@ -43,13 +43,13 @@
                   <p style="text-align:center">
                     <name>Kartik Ramachandruni</name>
                   </p>
-                  <p>I am a 4<sup>th</sup> Year PhD student in Robotics
+                  <p>I am a PhD student in Robotics
                     <a href="https://ic.gatech.edu/">(Interactive Computing department)</a>
                     at the Georgia Institute of Technology</a>. I am advised by
                     <a href="https://www.cc.gatech.edu/~chernova/">Prof. Sonia Chernova</a>
                     as part of the <a href="http://rail.gatech.edu/">Robot Autonomy and Interactive Learning (RAIL)
-                      lab</a>. My research focuses on enabling embodied AI agents to assist users with daily routines in unstructured and
-                      highly personalized human spaces with minimal task supervision.
+                      lab</a>. My research focuses on enabling embodied AI agents to perform household assistance tasks
+                      alongside and in collaboration with people without user supervision. 
                   </p>
                   <p>
                     I graduated from the
@@ -83,14 +83,10 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    I am currently working on user-assistive robots that learn user organizational preferences, such as object placement
-                    and arrangement preferences, from passive observation rather than explicit task instructions or demonstrations.
-                    My research aims to develop semantic reasoning techniques that can learn novel rearrangement preferences
-                    by integrating contextual cues from passive observations of partially arranged environments
-                    (e.g. a half-empty fridge or cabinet), with the aim of generalizing to previously unseen objects and households.
-                    My broader research interests include employing user interaction to resolve
-                    goal uncertainty in assistive tasks, user-adaptive task planning for human-robot collaboration, and robot imitation
-                    learning from video demonstrations.
+                    I work on developing  planning frameworks for communication-free object rearrangement alongside
+                    and in collaboration with people. These frameworks incorporate semantic task information,
+                    observed user actions, and prior environment states to learn object rearrangement preferences
+                    and task strategies, generalizing to previously unseen objects and environments in a zero-shot manner.
                   </p>
                 </td>
               </tr>
@@ -99,6 +95,41 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <papertitle>
+                      PARSEC: Preference Adaptation for Robotic Object Rearrangement from Scene Context
+                    </papertitle>
+                  <br>
+                  <strong>Kartik Ramachandruni</strong>,
+                  <a href="https://faculty.cc.gatech.edu/~chernova/">Sonia Chernova</a>
+                  <br>
+                  <em>Under Review at ROMAN 2025</em>
+                  <br>
+                  <a href="javascript:toggleblock('parsec_2025abs')">Abstract</a>
+                  <br>
+                  <p align="justify"> <i id='parsec_2025abs' style="display: none;">
+                    Object rearrangement is a key task for household robots requiring personalization without explicit instructions,
+                    meaningful object placement in environments occupied with objects, and generalization to unseen objects and new environments. 
+                    To facilitate research addressing these challenges, we introduce PARSEC, an object rearrangement benchmark for learning user organizational
+                    preferences from observed scene context to place objects in a partially arranged environment.
+                    PARSEC is built upon a novel dataset of 110K rearrangement examples crowdsourced from 72 users, featuring 93 object categories and 15 environments.
+                    We also propose ContextSortLM, an LLM-based rearrangement model that places objects in partially arranged environments
+                    by adapting to user preferences from prior and current scene context while accounting for multiple valid placements.
+                    We evaluate ContextSortLM and existing personalized rearrangement approaches on the PARSEC benchmark and complement these findings
+                    with a crowdsourced evaluation of 108 online raters ranking model predictions based on alignment with user preferences.
+                    Our results indicate that personalized rearrangement models leveraging multiple scene context sources perform better than models
+                    relying on a single context source. Moreover, ContextSortLM outperforms other models in placing objects to replicate the target
+                    user's arrangement and ranks among the top two in all three environment categories, as rated by online evaluators.
+                    Importantly, our evaluation highlights challenges associated with modeling environment semantics across different environment categories
+                    and provides recommendations for future work.
+                    </i>
+                  </p>
+                  <p></p>
+                </td>
+              </tr>
 
               <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle">
